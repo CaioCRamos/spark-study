@@ -6,3 +6,10 @@ lazy val root = (project in file("."))
   .settings(
     name := "rockthejvm_spark_essentials"
   )
+
+val sparkVersion = "3.2.2"
+
+libraryDependencies ++= Seq(
+  "org.apache.spark" %% "spark-core" % sparkVersion,
+  "org.apache.spark" %% "spark-sql" % sparkVersion
+)
