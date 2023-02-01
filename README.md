@@ -37,3 +37,12 @@
 
 ### Local Mode
 * The entire process runs locally
+
+### Execution Terminology
+A `job` has multiple `stages`, a `stage` has multiple `tasks`.
+
+* `stage` = a set of computations between shuffles.
+* `task` = a unit of computation, per partition.
+* `DAG` = "directed acyclic graph" of RDD dependencies
+
+* `shuffle` = exchange of data between spark nodes.
